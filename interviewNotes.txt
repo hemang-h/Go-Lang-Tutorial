@@ -1,0 +1,20 @@
+####### Memory Management ##########
+
+Memory allocation and reallocation happens automatically in Golang
+
+Difference between new() and Make()
+
+new(): 
+    1.  Memory is allocated but no INIT i.e. it's not initialized 
+    2.  Memory address is given
+    3.  Zeroed Storage: You cannot actually put any data initially
+
+make(): 
+    1.  Memory is allocated and INIT so that you can add any value to that
+    2.  Memory address is given
+    3.  Non-Zeroed storage: You can put any of the data initially     
+
+Garbage collection happens automatically in Go. It happens when variable goes out of Scope or nil
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
