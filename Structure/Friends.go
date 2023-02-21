@@ -18,9 +18,17 @@ func main() {
 		fmt.Println("Enter your friends details")
 		friendDetail()	
 		displayDetails()
+		printFirstNames()
 	}
 }
 
+func printFirstNames() {
+	FirstNames := []string{}
+	for _, first := range friend {
+		FirstNames = append(FirstNames, first.friendName)
+	}
+	fmt.Println("Friend Name is: ", FirstNames)
+}
 
 func friendDetail() {
 	fmt.Scan(&friendName, &age, &maritalStatus)
