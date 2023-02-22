@@ -18,3 +18,6 @@ Garbage collection happens automatically in Go. It happens when variable goes ou
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
+################## POINTER #########################
+
+Pointer is an 8 byte long integer pointing to a specific slot in Memory (4 byte long for 32bit OS, lol!)
