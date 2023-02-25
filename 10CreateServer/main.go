@@ -22,6 +22,5 @@ func PerformGetRequest(url string) {
 	dataBytes, _ :=ioutil.ReadAll(response.Body)	
 	content, _ := responseBuilder.Write(dataBytes)
 	fmt.Println(content)
-	fmt.Println()
-	
+	fmt.Println()	
 }
