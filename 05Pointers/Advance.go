@@ -10,7 +10,7 @@ type Player struct {
 
 var healthy int 
 
-func (player Player) takeDamageFromExplosion(intensity int) {                                 //We can declare the function like this
+func (player *Player) takeDamageFromExplosion(intensity int) {                                 //We can declare the function like this
 	fmt.Println("Function before the number hit and enter a intensity")
 	player.health -= (intensity + 5)
 	fmt.Println("HEALTH in function is: ", player.health)
@@ -35,7 +35,7 @@ func main() {
 	fmt.Println("Health of the BEFORE explosion player is: ", players.health)
 	
 	players.takeDamageFromExplosion(10)
-	takeDamageFromExplosion(players)                                                         // I can also pass the same value as takeDamageFromExplosion(&players) note the & here and compare with parameter passed in the function 
+	// takeDamageFromExplosion(players)                                                         // I can also pass the same value as takeDamageFromExplosion(&players) note the & here and compare with parameter passed in the function 
 	
 	fmt.Println("Health of the AFTER explosion player is: ", players.health)
 }
